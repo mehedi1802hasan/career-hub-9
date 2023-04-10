@@ -21,7 +21,8 @@ const router = createBrowserRouter([
     children:[
       {
         path:'/',
-        element:<Home></Home>
+        element:<Home></Home>,
+        loader:()=>fetch('jcl.json')
       },{
         path:'statistics',
         element:<Statistics></Statistics>

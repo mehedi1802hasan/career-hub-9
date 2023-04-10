@@ -1,0 +1,26 @@
+[
+    {
+      "id":1,
+      "picture": "https://cdn-icons-png.flaticon.com/512/1570/1570887.png",
+      "postname": "Account & Finance",
+      "available": "224 Jobs Available"
+    },
+    {
+      "id": 2,
+      "picture": "https://cdn-icons-png.flaticon.com/512/1014/1014347.png",
+      "postname": "Creative Design",
+      "available": "100+ Jobs Available"
+    },
+    {
+      "id": 3,
+      "picture": "https://cdn-icons-png.flaticon.com/512/1968/1968641.png",
+      "postname": "BlMarketing & Salesack",
+      "available": "150+ Jobs Available"
+    },
+    {
+      "id": 4,
+      "picture": "https://cdn-icons-png.flaticon.com/512/3504/3504022.png",
+      "postname": "Engineering Job",
+      "available": "300 Jobs Available"
+    }
+  ]

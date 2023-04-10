@@ -2,7 +2,7 @@ import React from 'react';
 
 const Header = () => {
     return (
-             <div className='p-10 bg-yellow-100 md:flex'>
+             <div className='p-10 md:flex'>
              <div className="md:w-6/12 shadow-x card bg-base-100">
              <div className="card-body">
             <h1 className="card-title">One Step <br/> Closer To Your<br/>Dream Job </h1>
