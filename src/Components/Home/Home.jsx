@@ -24,7 +24,7 @@ const Home = () => {
             {
                 jobcatagorylist.map(joblist=><JobCategoryList 
                  
-                key={joblist.id}
+                  key={joblist.id}
                 joblist={joblist}
                 ></JobCategoryList>)
             }
