@@ -21,8 +21,8 @@ const Jobs = ({job}) => {
                          <h6>salary: {salary}</h6>
                     </div>
                      <div className="card-actions">
-                         <button className="btn btn-primary">
-                            <Link to={`/jobdetails/${id}`}> View Details</Link>
+                     <button className="btn btn-primary">
+                            <Link to={`/details/${id}`}> View Details</Link>
                            
                            </button>
                      </div>

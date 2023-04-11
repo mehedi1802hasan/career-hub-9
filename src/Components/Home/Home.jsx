@@ -6,12 +6,12 @@ import { useLoaderData } from 'react-router-dom';
 import './Home.css'
 
 const Home = () => {
-    const jobcatagorylist=useLoaderData()
-    const [jobs,setJobs]=useState([])
+  const jobs=useLoaderData()
+  const [jobcatagorylist,setjobcatagorylist]=useState([])
     useEffect(()=>{
-        fetch('featuredJobs.json')
-        .then(res=>res.json())
-        .then(data=>setJobs(data))
+      fetch('jcl.json')
+       .then(res=>res.json())
+       .then(data=>setjobcatagorylist(data))
     },[])
     return (
         <div>
@@ -27,7 +27,7 @@ const Home = () => {
                   key={joblist.id}
                 joblist={joblist}
                 ></JobCategoryList>)
-            }
+            } 
             </div>
             
             <div >
