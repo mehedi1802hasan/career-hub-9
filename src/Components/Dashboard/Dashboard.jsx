@@ -4,22 +4,22 @@ import { PieChart, Pie, Sector, Cell, ResponsiveContainer,Tooltip } from 'rechar
 const Dashboard = () => {
   
       const data = [
-        { name: 'Assignment 1', number: 60 },
-        { name: 'Assignment 2', number: 58 },
-        { name: 'Assignment 3', number: 58 },
-        { name: 'Assignment 4', number: 58 },
-        { name: 'Assignment 5', number: 54 },
-        { name: 'Assignment 6', number: 47 },
-        { name: 'Assignment 7', number: 60 },
-        { name: 'Assignment 8', number: 58 },
+        { name: 'Assignment 1', marks: 60 },
+        { name: 'Assignment 2', marks: 58 },
+        { name: 'Assignment 3', marks: 58 },
+        { name: 'Assignment 4', marks: 58 },
+        { name: 'Assignment 5', marks: 54 },
+        { name: 'Assignment 6', marks: 47 },
+        { name: 'Assignment 7', marks: 60 },
+        { name: 'Assignment 8', marks: 58 },
       ];
            
     return (
-        <div className='flex justify-center'>
+        <div className='flex justify-center' >
              
-             <PieChart width={400} height={400}>
+             <PieChart width={350} height={400}>
           <Pie
-            dataKey="number"
+            dataKey="marks"
             startAngle={180}
             endAngle={0}
             data={data}
