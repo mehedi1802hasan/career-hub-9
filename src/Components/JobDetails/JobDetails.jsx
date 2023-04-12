@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 
 import {  useLoaderData, useParams,  } from "react-router-dom";
 const JobDetails = () => {
+  
   const {detailsId} = useParams();
   const data = useLoaderData();
 
@@ -40,12 +41,12 @@ const JobDetails = () => {
           
                    <div className="flex gap-2">
              <CurrencyDollarIcon className="w-6 h-6" />
-              <span>Salary: {salary}</span> 
+              <span>Salary: {salary} (per-month)</span> 
              
            </div>
            <div className="flex gap-2">
            <CalendarDaysIcon className="w-6 h-6"/>
-                   <p>Salary: {salary}(per-month)</p>
+                   <p>Job-Title: {jobTitle}</p>
                    </div>
                   
                    <h2 className="mt-5 card-title">Contact Information</h2>
@@ -63,7 +64,7 @@ const JobDetails = () => {
              <MapPinIcon className="w-6 h-6" />
               <span>Address: {location}</span> 
            </div>
-           <button className="btn btn-primary">
+           <button  className="btn btn-primary">
                         Apply-Now
                            </button>
                   </div>

@@ -14,6 +14,7 @@ import AppliedJob from './Components/AppliedJob/AppliedJob';
 import Blog from './Components/Blog/Blog';
 import GetStarted from './Components/GetStarted/GetStarted';
 import JobDetails from './Components/JobDetails/JobDetails';
+import Error from './Components/Error/Error';
 
 const router = createBrowserRouter([
   {
@@ -44,7 +45,11 @@ const router = createBrowserRouter([
       },{
         path:'getstarted',
         element:<GetStarted></GetStarted>
-      }
+      },
+      {
+        path:'*',
+        element:<Error></Error>
+      },
     ]
     
   },
