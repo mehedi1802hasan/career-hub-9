@@ -1,6 +1,7 @@
 
 import {CalendarDaysIcon,CurrencyDollarIcon, EnvelopeOpenIcon, MapPinIcon, PhoneIcon } from "@heroicons/react/24/solid";
 import { useEffect, useState } from "react";
+import { addToDb } from "../../utils/fakeDB";
 
 import {  useLoaderData, useParams,  } from "react-router-dom";
 const JobDetails = () => {
@@ -19,6 +20,10 @@ const JobDetails = () => {
   const {
     id,phone,email, experiences,educationalRequirements,jobResponsibility,jobDescription,salary, fulltimeOrPartTime, location, remoteOrOnsite, companyName, jobTitle, companyLogo,
   }= job;
+  const handleAddToCart=id=>{
+    console.log(id)
+   addToDb(id)
+  }
   return (
     <div>
        <div className="p-12 mb-16 bg-purple-100">
@@ -64,7 +69,7 @@ const JobDetails = () => {
              <MapPinIcon className="w-6 h-6" />
               <span>Address: {location}</span> 
            </div>
-           <button  className="btn btn-primary">
+           <button onClick={()=>handleAddToCart(id)} className="btn btn-primary">
                         Apply-Now
                            </button>
                   </div>
