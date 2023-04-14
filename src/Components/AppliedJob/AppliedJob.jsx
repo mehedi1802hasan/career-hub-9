@@ -31,7 +31,7 @@ const AppliedJob = () => {
        </div>
       <div className='w-10/12 m-auto'> 
         <div className="flex justify-end dropdown dropdown-hover">
-  <label tabIndex={0} className="m-1 btn">Hover</label>
+  <label tabIndex={0} className="m-1 btn">Filter By</label>
   <ul tabIndex={0} className="p-2 shadow dropdown-content menu bg-base-100 rounded-box w-52">
     <li><a>Onsite</a></li>
     <li><a>Fulltime</a></li>
