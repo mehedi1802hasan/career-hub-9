@@ -8,7 +8,8 @@ import './Home.css'
 const Home = () => {
   const jobs=useLoaderData()
   const [jobcatagorylist,setjobcatagorylist]=useState([])
-    useEffect(()=>{
+  const [seemore,setSeemore]=useState(true)
+  useEffect(()=>{
       fetch('jcl.json')
        .then(res=>res.json())
        .then(data=>setjobcatagorylist(data))
@@ -36,13 +37,17 @@ const Home = () => {
           </div>
           <div  className='grid grid-flow-row sm:gap-10 md:gap-20 sm:mx-7 md:mx-20 m:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2'>
          {
-            jobs.map(job=> <Jobs
+            jobs.slice(0,seemore ? 4 :6).map(job=> <Jobs
                 id={job.id}
                 job={job}
             ></Jobs>)
          }
+          </div >
+          <div  className='flex justify-center m-5'>
+          <button className='bg-yellow-400 ' onClick={()=>setSeemore
+          (false)}>see more</button>
           </div>
-          
+         
         </div>
     );
 };

@@ -45,12 +45,12 @@ const router = createBrowserRouter([
         element:<Blog></Blog>
       },{
         path:'getstarted',
-        element:<GetStarted></GetStarted>
+        element:<Home></Home>
       },
       {
         path:'*',
         element:<Error></Error>
-      },
+      }
     ]
     
   },

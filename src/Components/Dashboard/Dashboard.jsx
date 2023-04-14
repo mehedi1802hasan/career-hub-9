@@ -4,8 +4,8 @@ import { PieChart, Pie, Sector, Cell, ResponsiveContainer,Tooltip } from 'rechar
 const Dashboard = () => {
   
       const data = [
-        { name: 'Assignment 1', marks: 60 },
-        { name: 'Assignment 2', marks: 58 },
+        { name: 'Assignment 1', marks: 60},
+        { name: 'Assignment 2', marks:58 },
         { name: 'Assignment 3', marks: 58 },
         { name: 'Assignment 4', marks: 58 },
         { name: 'Assignment 5', marks: 54 },
